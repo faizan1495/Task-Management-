@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    padding: 10px 30px;
+    background-color: blueviolet;
+}
+.header h1{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* upper box */
+.upper-btn-box{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+
+}
+.upper-btn-box button{
+
+    width: 250px;
+    box-shadow: inset;
+    background-color: #01830c;
+    padding: 13px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    border-radius: 12px;
+    
+}
+.upper-btn-box button:hover{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* table box */
+.table-box{
+    width: 100%;
+    padding: 20px;
+}
+.table-box table{
+    width: 100%;
+    /* border: 1px solid #ccc; */
+}
+.table-box table tr th{
+    border-right: 1px solid #ccc;
+    padding: 30px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.table-box table tr td{
+    border-right: 1px solid #ccc;
+    padding: 10px 0px 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid #ccc;
+
+}
+.table-box table tr td button {
+    width: 40%;
+    border: none;
+    outline: none;
+    background-color: #4286f5;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    padding: 5px 0px 5px;
+    border-radius: 12px;
+} 
+button:disabled {
+    filter: grayscale(80%);
+}
+/* start model */
+
+.modal{
+    width: 0%;
+    height: auto;
+    background-color: #cedaec;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.modal.active{
+    opacity: 1;
+    z-index: 1;
+    width: 50%;
+}
+.modal .close-icon{
+    position: absolute;
+    right: -25px;
+    top: -24px;
+    font-size: 30px;
+    padding: 10px;
+    color: #EE534F;
+}
+.modal .input-box{
+   font-size: medium;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding: 5px;
+   display: flex;
+   padding-left: 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   
+}
+label
+{
+  margin-top: 10px;
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 5px;
+  padding-right: 10px;
+
+}
+input{
+    width: 100%;
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+
+.modal .box-bt button{
+    width: auto;
+    border: none;
+    outline: none;
+    background-color: #01830c;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding: 5px 10px 5px;
+    text-align: center;
+    border-radius: 12px;
+    
+}

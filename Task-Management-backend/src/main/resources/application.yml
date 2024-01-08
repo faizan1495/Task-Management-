@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: TASK-MANAGEMENT
+  datasource:
+    url: jdbc:mysql://localhost:3306/task_management
+    username: root
+    password: king
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect

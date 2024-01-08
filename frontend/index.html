@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesk Management</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+    <div class="header">
+        <h1> Task Management </h1>
+    </div>
+    <div class="upper-btn-box">
+        <button id="add_task"><i class="fa fa-plus"></i>&nbsp; Add Task</button>
+    </div>
+    <div class="table-box">
+        <table >
+            <tr>
+                <th>Sr No</th>
+                <th>Title</th>
+                <th>Descrption</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="table-data">
+
+            </tbody>
+
+        </table>
+    </div>
+    <div class="modal">
+        <i class="fa fa-times-circle close-icon"></i>
+        <h1>Task </h1>
+        <br>
+        <form id="taskForm">
+        <div class="input-box ">
+            <p>
+            <label for="Title ">Title</label>
+            <input id="title" type="text" required>
+             </p>
+            <p>
+                <label for="Descrption">Descrption</label> 
+                <input id="Descrption" type="text" required>
+            </p>     
+        </div>
+        <div class="box-bt">
+            <button id="create-btn" >Create</button>
+            <button id="updte-btn" disabled="disabled"  style="background-color: #04AA6D;">Update</button>
+        </div>
+    </form>
+    
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
