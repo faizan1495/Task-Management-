@@ -30,6 +30,7 @@ createBtn.addEventListener("click", async (e)=>{
         descreption: decs_data.value
     };
     console.log(newTask);
+    
 
     try {
         const createdTask = await createTaskBypost(newTask);
